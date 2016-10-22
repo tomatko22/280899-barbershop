@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+		<meta charset="utf-8">
+		<title>Барбершоп"Бородинский"</title>
+  </head>
+<body>
+	<header class="page-header">
+		<div class="container">
+			<div class="index-logo">
+				<a href="index.html">
+					<img src="http://placehold.it/130x30">
+				</a>
+			</div>
+			<nav class="main-navigation">
+				<ul>
+					<li>
+						<a href="#">Информация</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li>
+						<a href="#">Прайс-лист</a>
+					</li>
+					<li>
+						<a href="shop.html">Магазин</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="user-block">
+				<a class="login" href="#">Вход</a>
+			</div>
+	</header>
+<main class="container">
+	<div class="inner-page-title">
+		<h1>средства для ухода</h1>
+		<ul class="breadcrumbs">
+			<li>
+				<a href="index.html">главная</a>
+			</li>
+			<li>
+				<a href="shop.html">магазин</a>
+			</li>
+			<li class="current">средства для ухода</li>
+		</ul>
+	</div>
+	<div class="shop-page">
+	<!-- а можно имя класса задать просто left-column?? -->
+		<div class="shop-page-left-column">
+			<div class="filters" >
+				<h2>производители</h2>
+				<form>
+					<label>
+					<!-- name должны быть разными или одинаковыми, не могу понять. И уместно ли здесь использовать <br> или есть другие варианты для переноса строк?? -->
+						<input type="checkbox" name="producer-1" checked>baxter of california<br>
+					</label>
+					<label>
+						<input type="checkbox" name="producer-2">mr natty<br>
+					</label>
+					<label>
+						<input type="checkbox" name="producer-3" checked>suavecito<br>
+					</label>
+					<label>
+						<input type="checkbox" name="producer-4">malin+goetz<br>
+					</label>
+					<label>
+						<input type="checkbox" name="producer-5">murray's<br>
+					</label>
+					<label>
+						<input type="checkbox" name="producer-6" checked>american crew
+					</label>
+				</form>
+				<h2>группы товаров</h2>
+				<form>
+					<label>
+					<!-- value может состоять из нескольких слов, и нужно ли их тоже дефисом соединять? -->
+						<input type="radio" name="item-group" value="shaving accessories">бритвенные принадлежности<br>
+					</label>
+					<label>
+						<input type="radio" name="item-group" value="means for care" checked>средства для ухода<br>
+					</label>
+					<label>
+						<input type="radio" name="item-group" value="accessories">аксессуары<br>
+					</label>
+				</form>
+				<button type="submit" name="show">показать</button>
+			</div>
+		</div>
+		<div class="shop-page-right-column">
+		<!-- оставить тег артикл или поменять на див или секшен? -->
+			<article class="item-card">
+				<a href="index.html">
+					<img src="http://placehold.it/150x100" alt="Набор для путешествий">
+				</a>
+				<div class="name">
+				<!-- уместен ли <br>? -->
+					<span>Набор для путешествий</span><br>
+					<span>"baxter of california"</span>
+				</div>
+				<div class="price">
+					<span>2900 руб.</span>
+					<button type="submit">Купить</button>
+				</div>
+			</article>
+			<article class="item-card">
+					<img src="http://placehold.it/150x100" alt="Увлажняющий кондиционер">
+				<div class="name">
+					<span>Увлажняющий кондиционер</span><br>
+					<span>"baxter of california"</span>
+				</div>
+				<div class="price">
+					<span>730 руб.</span>
+					<button type="submit">Купить</button>
+				</div>
+			</article>
+			<article class="item-card">
+					<img src="http://placehold.it/150x100" alt="Гель для волос">
+				<div class="name">
+					<span>Гель для волос</span><br>
+					<span>"suavecito"</span>
+				</div>
+				<div class="price">
+					<span>290 руб.</span>
+					<button type="submit">Купить</button>
+				</div>
+			</article>
+			<article class="item-card">
+					<img src="http://placehold.it/150x100" alt="Глина для укладки волос">
+				<div class="name">
+					<span>Глина для укладки волос</span><br>
+					<span>"american crew"</span>
+				</div>
+				<div class="price">
+					<span>500 руб.</span>
+					<button type="submit">Купить</button>
+				</div>
+			</article>
+			<article class="item-card">
+					<img src="http://placehold.it/150x100" alt="Гель для волос">
+				<div class="name">
+					<span>Гель для волос</span><br>
+					<span>"american crew"</span>
+				</div>
+				<div class="price">
+					<span>300 руб.</span>
+					<button type="submit">Купить</button>
+				</div>
+			</article>
+			<article class="item-card">
+				<img src="http://placehold.it/150x100" alt="Набор для бритья">
+				<div class="name">
+					<span>Набор для бритья</span><br>
+					<span>"baxter of california"</span>
+				</div>
+				<div class="price">
+					<span>3900 руб.</span>
+					<button type="submit">Купить</button>
+				</div>
+			</article>
+			<ul class="page-list">
+				<li>
+					<a href="#">1</a>
+				</li>
+				<li class="current">2</li>
+				<li>
+					<a href="#">3</a>
+				</li>
+				<li>
+					<a href="#">4</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</main>
+<footer class="page-footer">
+	<div class="container">
+		<section class="footer-contacts">
+			Барбершоп «Бородинский»<br>
+      Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+      <a href="#">Как нас найти?</a><br>
+      Телефон: +7 (812) 666-02-66
+    </section>
+    <section class="footer-social">
+       <p>Давайте дружить!</p>
+       <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+       <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+       <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+    </section>
+    <section class="footer-copyright">
+    	<p>Разработано:</p>
+      <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+    </section>
+	</div>
+</footer>
+</body>
+</html>
+<!-- размер шрифтов, регистр и тп в СSS менять будем, правильно? -->
